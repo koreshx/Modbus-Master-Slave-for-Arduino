@@ -66,7 +66,7 @@ void loop() {
     master.query( telegram[u8query] ); // send query (only once)
     u8state++;
 	u8query++;
-	if (u8query > 2) u8query = 0;
+	if (u8query > 1) u8query = 0; //it was a little bug, but I spent an hour to "fix" my test rs-485 line :) Koresh
     break;
   case 2:
     master.poll(); // check incoming messages
